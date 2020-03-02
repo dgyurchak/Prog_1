@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a, num, tmp = 0;
+    scanf("%d", &a);
+    int t[a];
+    for (int i = 0; i < a; i++) {
+        scanf("%d", &num);
+        if (num % 4 == 0) {
+            t[tmp] = num;
+            tmp++;
+        }
+    }
+    for(int i = 0; i < tmp; i++) {
+        printf("%d ", t[i]);
+    }
+    pritnf("\n");
+}
